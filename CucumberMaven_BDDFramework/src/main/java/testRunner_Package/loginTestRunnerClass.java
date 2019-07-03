@@ -6,9 +6,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "/home/shanmukh/eclipse-workspace/CucumberMaven_BDDFramework/src/test/freeCRM_BDDPAck_Feature",
+		features = "/home/shanmukh/git/repository/CucumberMaven_BDDFramework/src/test/freeCRM_BDDPAck_Feature",
 		glue = {"testDefinitionsPackage"},
-		dryRun = false, //true - to check if all the test definitions are defined
+		dryRun = true, //true - to check if all the test definitions are defined
 		monochrome = true,
 		plugin = {"pretty", "html:target/cucumber", "json:target/cucumber-report.json"},
 		junit = "--step-notifications" //to display all the test steps under test results
