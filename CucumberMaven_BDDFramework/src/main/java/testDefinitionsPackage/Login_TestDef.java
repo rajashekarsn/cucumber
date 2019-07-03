@@ -87,5 +87,17 @@ public class Login_TestDef {
 		driver.close();
 		System.out.println("Test Completed, Browser Closed");
 	}
+	@Given("User is logged in")
+	public void user_is_logged_in() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("Title of page is CRM")
+	public void title_of_page_is_CRM() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
 
 }
