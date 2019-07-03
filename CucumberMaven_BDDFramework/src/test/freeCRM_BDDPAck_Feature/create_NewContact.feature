@@ -20,14 +20,8 @@
 Feature: Create contacts
 
 Scenario Outline: Free CRM Create a New Contact
-Given user is already on Login Page
-When title of login page is Free CRM
-Then user finds and clicks on login button
-Then user enters "<username>" and "<password>"
-#with example - Scenario Outline
-#Then user enters "rajashekar.sn@gmail.com" and "Test@123?" #without example - Scenario
-Then user clicks on login button
-Then user is on home page
+Given User is logged in
+When Title of page is CRM
 Then user navigates to create contact page
 Then user enters contact details "<firstname>" and "<lastname>" and "<Company>"
 Then user clicks on save
@@ -35,6 +29,6 @@ Then user clicks on save
 
 Examples:
 
-|	username								|	password	|	firstname	|	lastname	|	Company	|
-|	rajashekar.sn@gmail.com	|	Test@123?	|	ra				|	sn				| abc			|
-#	|	raj											|	afafa			|
+|	firstname	|	lastname	|	Company	|
+|	raj1			|	sn				| abc			|
+|	raj2			|	afafa			|	abc2		|
